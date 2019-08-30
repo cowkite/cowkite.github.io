@@ -1,12 +1,8 @@
-----
-
+---
 title: "Data Science - Pandas 기초"
-
 date: 2019-08-27 17:16
-
 categories: development python data-science
-
-------
+---
 
 
 
