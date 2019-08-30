@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "COWKITE"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://avatars2.githubusercontent.com/u/15315794?s=460&v=4"
   bio              : "Hope to develop every beautiful thigs"
   location         : "Seoul"
   email            :
