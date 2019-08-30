@@ -1,13 +1,8 @@
-----
-
+---
 title: "Data Science - Python을 활용한 데이터 분석 환경 구성"
-
 date: 2019-08-27 13:00
-
 categories: development python data-science
-
-------
-
+---
 
 
 ## 1. 개발 환경 구성
@@ -62,15 +57,10 @@ categories: development python data-science
 ## 2. IPython
 
 * Interactive Python. python을 실행할 수 있는 웹 기반의 쉘.
-
 * A powerful interactive shell.
-
 * A kernel for [Jupyter](https://jupyter.org/).
-
 * Support for interactive data visualization and use of [GUI toolkits](http://ipython.org/ipython-doc/stable/interactive/reference.html#gui-event-loop-support).
-
 * Flexible, [embeddable interpreters](http://ipython.org/ipython-doc/stable/interactive/reference.html#embedding-ipython)
-
 * Easy to use, high performance tools for [parallel computing](https://ipyparallel.readthedocs.io/en/latest/).
 
   #### 2-1. Magic commands
@@ -96,42 +86,27 @@ categories: development python data-science
   * `?`를 붙이고 실행(`shift`+`enter`)를 누르면 signature를 볼 수 있음 (ex: `range?`)
 
   #### 2-4. 이전 명령어 & 결과 보기
-
+  
   * `_`: 직전 결과
   * `__`: 전전 결과
 
   #### 2-5. pdf
-
+  
   * `%debug` 명령어를 통해 디버깅 모드에 진입할 수 있음
-
   * `%pdb on`: pdb 자동 실행
-
   * `%pdb off`: pdb 자동 실행 종료
-
   * pdb 명령어:
-
     * `help`: 도움말
-
     * `next`: 다음 문장으로 이동
-
     * `print`: 변수값 화면에 표시
-
     * `list`: 소스코드 리스트 출력. 현재 위치 화살표로 표시됨
-
     * `where`: 콜스택 출력
-
     * `continue`: 계속 실행. 다음 중단점에 멈추거나 중단점 없으면 끝까지 실행
-
     * `step`: Step Into 하여 함수 내부로 들어감
-
     * `return`: 현재 함수의 리턴 직전까지 실행
-
     * `!변수명`: 값 변수에 값 재설정
-
     * `up`: 한 프레임 위로
-
     * `down`: 한 프레임 아래로
-
     * `quit`: pdb 종료
 
       
@@ -139,13 +114,9 @@ categories: development python data-science
 ## 3. Jupyter Notebook
 
 * Visualized한 결과물을 위해 사용
-
 * Language agnostic(언어에 상관 없는): IPython은 Jupyter의 커널 중 하나일 뿐
-
 * Youtube, audio 삽입이 자유롭고 Markdown, HTML, Latex 등등 사용 가능
-
 * 커널 컨트롤이 가능 (interrupt: `ii`, restart: `00`)
-
 * Widget 제공: `interact`를 통한 위젯 사용
 
   ### 3-1. Shortcut
