@@ -1,5 +1,5 @@
 ---
-title: "Data Science - Regression"
+title: "Data Science - Regression (선형 회귀)"
 date: 2019-08-28 10:18
 categories: development python data-science
 ---

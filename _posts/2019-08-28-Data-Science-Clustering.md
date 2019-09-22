@@ -1,5 +1,5 @@
 ---
-title: "Data Science - Clustering"
+title: "Data Science - Clustering (클러스터링)"
 date: 2019-08-28 16:20
 categories: development python data-science
 ---

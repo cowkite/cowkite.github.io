@@ -1,5 +1,5 @@
 ---
-title: "Data Science - Classification"
+title: "Data Science - Classification (분류)"
 date: 2019-08-28 15:18
 categories: development python data-science
 ---
