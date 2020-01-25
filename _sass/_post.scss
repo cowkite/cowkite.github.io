@@ -345,22 +345,9 @@ sup {
     }
 }
 
-.share {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 120px;
-    animation-name: moving;
-    animation-duration: 0.6s;
-    animation-timing-function: ease-in-out;
-}
-
-.share-facebook {
-    position: absolute;
-    left: 80px;
-}
-
-.share-twitter {
-    position: absolute;
+.comments {
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 // portfolio
