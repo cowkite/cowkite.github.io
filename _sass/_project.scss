@@ -1,0 +1,105 @@
+.project {
+   
+    &-info {
+        border-bottom: 1px solid rgb(230,230,230);
+        margin: 15px 0px;
+        padding: 40px 20px;
+
+
+        &:last-child {
+            border: none;
+        }
+
+        .project-img {
+            height: 300px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .project-organization {
+            color: $primary;
+            font-size: 18px;
+            font-family: $source;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        
+        h1.project-title {
+            color: $grey-0;
+            display: block;
+            font-family: $san-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.5;
+            letter-spacing: -0.009em;
+            position: relative;
+
+            @media (max-width: $break-small) {
+                  font-size: 22px;
+            }
+        }
+        
+        @media (max-width: $break-medium) {
+            display: block;
+            width: 100%;
+        }
+
+        .project-description {
+            font-size: 18px;
+            line-height: 1.75;
+
+            @media (max-width: $break-small) {
+                font-size: 16px;
+            }        
+        }
+        
+        .project-date {
+            font-size: 16px;
+            color: $grey-1;
+            line-height: 1.75;
+
+            @media (max-width: $break-small) {
+                font-size: 14px;
+            }        
+        }
+
+        .project-role {
+            font-size: 16px;
+            margin: 20px 0px;
+        }
+        .project-role li {
+            margin-top: 8px;
+            line-height: 0.9;
+        }
+
+        .radius {
+            line-height: 20px;
+            display: inline-block;
+            white-space: initial;
+            margin-right: 5px;
+        }
+
+        .radius div {
+            margin-right: 4px;
+            font-size: 13px;
+            border-radius: 20px;
+            padding: 2px 15px;
+            white-space: nowrap;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .project-language div {
+            border: 1px solid rgb(137, 66, 244);
+            color: rgb(137, 66, 244);
+        }
+
+        .project-skill div {
+            border: 1px solid rgb(244, 65, 95);
+            color: rgb(244, 65, 95);
+        }
+        
+    }
+    
+}

@@ -1,0 +1,9 @@
+- name: Android
+- name: Java
+- name: Kotlin
+- name: ReactNative
+- name: RxJava
+- name: Cordova
+- name: Flutter
+- name: Python
+- name: Tensorflow
