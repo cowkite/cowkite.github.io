@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+<link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/_favicon/favicon.ico">
+
 <section class="explanation">
     <table>
         <tr>
