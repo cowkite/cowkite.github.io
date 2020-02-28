@@ -6,7 +6,7 @@ type: Server
 blog: true
 text: true
 post-header: true
-header-img: "img/about.jpg"
+header-img: "img/about.png"
 date: 2020-01-26
 comments: true
 ---
