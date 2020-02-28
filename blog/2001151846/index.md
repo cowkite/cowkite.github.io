@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Slack으로 AWS 모니터링하기
-subtitle: AWS Lambda를 활용하여 Slack에서 CloudWatch 모니터링
+subtitle: :eyes: AWS Lambda를 활용하여 Slack에서 CloudWatch 모니터링
 type: Server
 blog: true
 text: true
