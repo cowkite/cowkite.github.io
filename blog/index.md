@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Blog
-description: 김소연의 소소한 소로그
+description: 소연이의 소소한 소로그
 main: true
 project-header: true
 header-img: img/about.jpg
