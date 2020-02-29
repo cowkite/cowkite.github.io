@@ -2,9 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{{ page.title }} | {{ site.title }}</title>
-    
-<!-- Post info -->
+  <!-- Post info -->
 
   {% assign title = {% if page.home == true %}{{ site.title }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %} %}
   {% assign description = {% if page.home == true %}{{ page.description }}{% else %}{{ site:title }}{% endif %} %}
