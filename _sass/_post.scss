@@ -43,6 +43,67 @@
     background-color: $grey-2;
 }
 
+// post footer 
+.post-footer {
+    margin: 70px 0px 0px 0px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 20px 0px;
+
+    .image {
+        width: 15%;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 10px;
+        img {
+            margin: 0px;
+        }
+        @media (max-width: $break-small) {
+            width: 30%;
+        }
+    }
+    .profile {
+        width: 15%;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0px 10px;
+        p {
+            margin: 0px;
+            line-height: 1.5;
+        }
+        .id {
+            color: $primary;
+            font-size: 0.8em;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .nickname {
+            font-size: 0.9em;
+        }
+        @media (max-width: $break-small) {
+            width: 60%;
+        }
+    }
+    .description {
+        width: 68%;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0px 10px;
+        font-size: 0.8em;
+        p {
+            margin: 0px;
+            line-height: 1.5;
+        }
+        @media (max-width: $break-small) {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}
+
+
 //post 영역
 
 .post {
