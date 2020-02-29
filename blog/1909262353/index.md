@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AWS Dev Day 2019 참가 후기
-subtitle: Xcode와 Android Studio를 통한 개발환경 구성
+subtitle: 인공지능/기계 학습 강연 (feat. 무한제공 맥주 🍺)
 type: Conference
 blog: true
 text: true
