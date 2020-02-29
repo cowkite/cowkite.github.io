@@ -1,3 +1,58 @@
+- id: 201910scmdl
+  title: SCM최적발주 딥러닝 수요예측
+  description: 딥러닝을 통한 수요/재고예측
+  organization: CJ OliveYoung
+  period: 2019.10 - Present
+  # thumbnail: img/tbd.jpg
+  language: [
+    Python,
+    Tensorflow
+  ]
+  skill: [
+    DataScience,
+    LSTM,
+    Seq2Seq
+  ]
+  role: [
+    행사상품 매장 판매량 수요예측,
+    B2B/B2C 물류센터 재고량 수요예측
+  ]
+
+- id: 201908oyez
+  title: 올영EZ
+  description: 올리브영X세노비스 건강&영양소 정보 안내 서비스
+  organization: CJ OliveYoung
+  period: 2019.08 - 2020.02
+  # thumbnail: img/tbd.jpg
+  language: [
+    Android,
+    Kotlin
+  ]
+  skill: [
+    Retrofit2
+  ]
+  role: [
+    Jenkins 앱 빌드 자동화 환경 구성,
+    하이브리드 웹뷰 연동
+  ]
+
+- id: 20907healtyoy
+  title: 올리브영X세노비스 건강지식
+  description: 올리브영X세노비스 건강&영양소 정보 안내 서비스
+  organization: CJ OliveYoung
+  period: 2019.07 - 2019.07
+  # thumbnail: img/tbd.jpg
+  language: [
+    Android,
+    Kotlin
+  ]
+  skill: [
+    Retrofit2
+  ]
+  role: [
+    건강&영양소 정보 안내 태블릿 어플리케이션 구현
+  ]
+
 - id: 201904smarthome
   title: SKT 스마트홈
   description: 스마트폰으로 언제 어디서나 편하고 쉽게 가전을 제어할 수 있는 IoT 서비스

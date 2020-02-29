@@ -11,7 +11,9 @@ header-img: "img/project_bg.jpg"
 <div class="project">
     {% for project in site.data.project-list %}
         <div class="project-info transition">
-            <img class="project-img" src="{{ project.thumbnail }}" />
+            {% if project.thumbnail != nil %}
+                <img class="project-img" src="{{ project.thumbnail }}" />
+            {% endif %}
             <div class="project-organization">{{ project.organization }}</div>
             <div><h1 class="project-title">{{ project.title }}</h1></div>
             <div class="project-description">{{ project.description }}</div>
