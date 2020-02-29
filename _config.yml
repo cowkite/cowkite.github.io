@@ -24,7 +24,7 @@ email: iscowkite@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   안녕하세요. 우물 안에서 서식하는 개발요정 김소연입니다.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ko.cowkite.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://blog.cowkite.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
@@ -35,6 +35,13 @@ plugins:
 collections:
   _posts:
     output: true
+    
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class   : 'syntax'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
