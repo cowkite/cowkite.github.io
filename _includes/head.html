@@ -6,25 +6,38 @@
     
 <!-- Post info -->
 
-  <meta property="og:site_name" content="{{ site.title }}">
+  {% assign title = {% if page.home == true %}{{ site.title }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %} %}
+  {% assign description = {% if page.home == true %}{{ page.description }}{% else %}{{ site:title }}{% endif %} %}
+  {% assign thumbnail = {% if page.post-header == true or page.project-header == true %}{{ site.url }}{{ page.url }}{{ page.header-img }}{% else %}{{ site.url }}{{'/meta/meta_image.png'}}{% endif %} %}
+  {% assign url = {% if page.post-header == true or page.project-header == true %}{{ site.url }}{{ page.url }}{% else %}{{ site.url }}{% endif %} %}
+  {% assign type = {% if page.post-header == true or page.project-header == true %}"article"{% else %}"website"{% endif %} %}
 
-    <meta property="fb:app_id"          content="1607605225977118" />
-    <meta property="og:type"            content="article" /> 
-    <meta property="og:url"             content="{{ site.url }}{{ page.url }}" />
-    
-    <meta property="og:image" content="{% if page.post-header == true or page.project-header == true %}{{ site.url }}{{ page.url }}{{ page.header-img }}{% else %}{{ site.url }}{{'/meta/meta_image.png'}}{% endif %}">
-    <meta name="twitter:card" content="summary_large_image"> 
-    
-    <!-- title -->
-    <meta property="og:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.home == true %}{{ site.url }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %}">
-    <meta name="twitter:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.home == true %}{{ site.url }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %}">
-    
-    <!-- description -->
-    <meta property="og:description" content="{% if page.home == true %}{{ page.description }}{% else %}{{ site:title }}{% endif %}"/>
-    <meta name="twitter:description" content="{% if page.home == true %}{{ page.description }}{% else %}{{ site:title }}{% endif %}">
-    
+  <!-- HTML Meta Tags -->
+  <title>{title}</title>
+  <meta name="description" content="{description}">
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="{title}">
+  <meta itemprop="description" content="{description}">
+  <meta itemprop="image" content="{thumbnail}">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="{url}">
+  <meta property="og:type" content="{type}">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{description}">
+  <meta property="og:image" content="{thumbnail}">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title}">
+  <meta name="twitter:description" content="{description}">
+  <meta name="twitter:image" content="{thumbnail}">
+  
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="/meta/favicon.ico">
 </head>
+
+
