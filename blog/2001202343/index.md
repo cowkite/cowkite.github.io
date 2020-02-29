@@ -6,7 +6,7 @@ type: Mobile/ReactNative
 blog: true
 text: true
 post-header: true
-header-img: "img/about.png"
+header-img: "img/about.jpg"
 date: 2020-02-20 23:43
 comments: true
 ---
