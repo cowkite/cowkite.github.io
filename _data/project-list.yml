@@ -1,7 +1,7 @@
 - id: 201910scmdl
   title: SCM최적발주 딥러닝 수요예측
   description: 딥러닝을 통한 수요/재고예측
-  organization: CJ OliveYoung
+  platform: Machine Learning
   period: 2019.10 - Present
   thumbnail: img/project_scmdl_thumbnail.png
   language: [
@@ -21,7 +21,7 @@
 - id: 201908oyez
   title: 올영EZ
   description: 상품 큐레이션 및 스마트워크 플랫폼 제공을 위한 매장 내 태블릿 서비스
-  organization: CJ OliveYoung
+  platform: Tablet application
   period: 2019.08 - 2020.02
   thumbnail: img/project_oyez_thumbnail.png
   language: [
@@ -39,7 +39,7 @@
 - id: 20907healtyoy
   title: 올리브영X세노비스 건강지식
   description: 올리브영X세노비스 건강&영양소 정보 안내 서비스
-  organization: CJ OliveYoung
+  platform: Tablet application
   period: 2019.07 - 2019.07
   thumbnail: img/project_healtyoy_thumbnail.png
   language: [
@@ -56,7 +56,7 @@
 - id: 201904smarthome
   title: SKT 스마트홈
   description: 스마트폰으로 언제 어디서나 편하고 쉽게 가전을 제어할 수 있는 IoT 서비스
-  organization: Ubivelox Mobile
+  platform: Mobile application
   period: 2019.04 - 2019.06
   thumbnail: img/project_smarthome_thumbnail.jpg
   language: [
@@ -75,7 +75,7 @@
 - id: 201809ai
   title: LG U+ AI Platform 자사플랫폼 고도화
   description: AI기반 서비스 및 N사 플랫폼 연동을 통한 AI 서비스
-  organization: Ubivelox Mobile
+  platform: Mobile application
   period: 2018.09 - 2019.06
   thumbnail: img/project_ai_thumbnail.jpg
   language: [
@@ -101,7 +101,7 @@
 - id: 201809widwiz
   title: WIDWIZ
   description: 클라우드 인포테인먼트 시스템을 이용한 차량 네비게이션 시스템
-  organization: Ubivelox Mobile
+  platform: Mobile application
   period: 2018.09 - 2019.04
   thumbnail: img/project_widwiz_thumbnail.png
   language: [
@@ -124,7 +124,7 @@
 - id: 201809everyair
   title: SKT 에브리에어
   description: 실시간으로 전국 미세먼지 정보를 제공하는 미세먼지 지도
-  organization: Ubivelox Mobile
+  platform: Mobile application
   period: 2018.07 - 2018.10
   thumbnail: img/project_everyair_thumbnail.jpg
   language: [
@@ -143,7 +143,7 @@
 - id: 201904ai
   title: LG U+ 우리집 AI 사용자앱
   description: AI 기반 서비스 및 N사 플랫폼 연동을 통한 AI 서비스
-  organization: Ubivelox Mobile
+  platform: Mobile application
   period: 2018.04 - 2018.07
   thumbnail: img/project_aiuser_thumbnail.png
   language: [
@@ -166,7 +166,7 @@
 - id: 201803mole
   title: 영유아 융복합 교육 서비스 - 두더지 팡팡
   description: 영유아 아이를 대상으로 한 교육용 게임 와치 어플리케이션
-  organization: Ubivelox Mobile
+  platform: Watch application
   period: 2018.03 - 2018.03
   thumbnail: img/project_childeducation_mole_thumbnail.png
   language: [
@@ -182,7 +182,7 @@
 - id: 201706Jinju
   title: 진주교육대학교
   description: 진주교육대학교 모바일 이용증 및 도서관 시설 이용 서비스
-  organization: Ubivelox Mobile
+  platform: Mobile application
   period: 2017.06 - 2017.09
   thumbnail: img/project_library_thumbnail.jpg
   language: [
@@ -198,9 +198,9 @@
   ]
 
 - id: 20170mga
-  title: PyeongChang2018 Official Mobile Guide Application
+  title: PyeongChang2018 Official Mobile Guide application
   description: 2018 평창 올림픽 공식 모바일 가이드 어플리케이션
-  organization: Ubivelox Mobile
+  platform: Mobile/Tablet application
   period: 2017.01 - 2018.03
   thumbnail: img/project_pyeongchang_thumbnail.jpg
   language: [
@@ -226,7 +226,7 @@
 - id: 201610giggle
   title: 영유아 융복합 교육 서비스 - 부모앱
   description: 영유아 자녀를 둔 부모를 타겟팅 한 IoT 연동 서비스
-  organization: Ubivelox Mobile
+  platform: Mobile application
   period: 2016.10 - 2016.12
   thumbnail: img/project_childeducation_parent_thumbnail.png
   language: [
@@ -246,9 +246,9 @@
   ]
 
 - id: 201504rio
-  title: Rio2016 Official Application
+  title: Rio2016 Official application
   description: 2016 Rio 올림픽 공식 모바일 어플리케이션
-  organization: Ubivelox Mobile
+  platform: Mobile/Tablet application
   period: 2015.04 - 2016.09
   thumbnail: img/project_rio_thumbnail.jpg
   language: [
@@ -267,7 +267,7 @@
 - id: 201411paynow
   title: LG U+ BizPaynow
   description: 배달 음식점 전용 솔루션
-  organization: Ubivelox Mobile
+  platform: Mobile application
   period: 2014.11 - 2015.03
   thumbnail: img/project_paynow_thumbnail.png
   language: [

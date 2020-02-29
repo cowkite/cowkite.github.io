@@ -12,7 +12,7 @@ description: 개발에 참여한 프로젝트
             {% if project.thumbnail != nil %}
                 <img class="project-img" src="{{ project.thumbnail }}" />
             {% endif %}
-            <div class="project-organization">{{ project.organization }}</div>
+            <div class="project-platform">{{ project.platform }}</div>
             <div><h1 class="project-title">{{ project.title }}</h1></div>
             <div class="project-description">{{ project.description }}</div>
             <div class="project-date">{{ project.period }}</div>
