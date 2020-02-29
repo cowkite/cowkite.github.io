@@ -2,7 +2,7 @@
 layout: default
 work: true
 main: true
-title: Projects
+title: Project
 description: 개발에 참여한 프로젝트
 ---
 

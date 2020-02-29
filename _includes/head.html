@@ -20,8 +20,8 @@
     <meta name="twitter:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %}">
     
     <!-- description -->
-    <meta property="og:description" content="{{ site:title }}"/>
-    <meta name="twitter:description" content="{{ site:title }}">
+    <meta property="og:description" content="{% if page.title == 'Home' %}{{ page.description }}{% else %}{{ site:title }}{% endif %}"/>
+    <meta name="twitter:description" content="{% if page.title == 'Home' %}{{ page.description }}{% else %}{{ site:title }}{% endif %}">
     
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">

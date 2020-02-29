@@ -22,7 +22,7 @@ title: 개발요정 김소연 블로그 &#x1F9DA;&#x200D;&#x2640;&#xFE0F;
 author: cowkite
 email: iscowkite@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  안녕하세요. 우물 안에서 서식하는 개발요정 김소연입니다.
+  안녕하세요. 우물 속에서 서식하는 개발요정 김소연입니다.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blog.cowkite.com" # the base hostname & protocol for your site, e.g. http://example.com
 
