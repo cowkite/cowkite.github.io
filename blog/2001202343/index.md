@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mac에서 ReactNative 프로젝트 환경 구성하기
-subtitle: Xcode와 IntelliJ(Android Studio)를 통한 프로젝트 환경 구성
+subtitle: Xcode와 Android Studio를 통한 개발환경 구성
 type: Mobile/ReactNative
 blog: true
 text: true
@@ -10,8 +10,6 @@ header-img: "img/about.png"
 date: 2020-02-20 23:43
 comments: true
 ---
-
-
 
 ## Mac(OSX) 셋팅 - iOS 개발 환경 구성
 

@@ -60,7 +60,7 @@ CloudWatch 실시간 모니터링을 하거나 경보를 설정해도 되지만,
 
    아래 URL로 테스트하면 해당 채널에 'Hello, World!'가 전송된 것을 확인할 수 있다. —고 한다. 사실 난 하지 않았다. 어쨌든 내 목표는 CloudWatch 연동이므로.. (이 정도는 당연히 되겠지하는 안일함^^..)
 
-   ```
+   ```sh
     curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}'
     <https://hooks.slack.com/services/>...
    ```
@@ -119,53 +119,51 @@ CloudWatch 실시간 모니터링을 하거나 경보를 설정해도 되지만,
 
    kms 암호화 적용.. 일단은 안할거다..
 
-   ```
-    import boto3
-    	import json
-    	import logging
-    	import os
-    
-    	from base64 import b64decode
-    	from urllib.request import Request, urlopen
-    	from urllib.error import URLError, HTTPError
-    
-    
-    	# The base-64 encoded, encrypted key (CiphertextBlob) stored in the kmsEncryptedHookUrl environment variable
-    -	ENCRYPTED_HOOK_URL = os.environ['kmsEncryptedHookUrl']
-    	# The Slack channel to send a message to stored in the slackChannel environment variable
-    	SLACK_CHANNEL = os.environ['slackChannel']
-    
-    -	HOOK_URL = "https://" + boto3.client('kms').decrypt(CiphertextBlob=b64decode(ENCRYPTED_HOOK_URL))['Plaintext'].decode('utf-8')
-    +	HOOK_URL = os.environ['hookUrl']
-    
-    	logger = logging.getLogger()
-    	logger.setLevel(logging.INFO)
-    
-    
-    	def lambda_handler(event, context):
-    	    logger.info("Event: " + str(event))
-    	    message = json.loads(event['Records'][0]['Sns']['Message'])
-    	    logger.info("Message: " + str(message))
-    
-    	    alarm_name = message['AlarmName']
-    	    #old_state = message['OldStateValue']
-    	    new_state = message['NewStateValue']
-    	    reason = message['NewStateReason']
-    
-    	    slack_message = {
-            	'channel': SLACK_CHANNEL,
-    	        'text': "%s state is now %s: %s" % (alarm_name, new_state, reason)
-    	    }
-    
-    	    req = Request(HOOK_URL, json.dumps(slack_message).encode('utf-8'))
-    	    try:
-    	        response = urlopen(req)
-    	        response.read()
-    	        logger.info("Message posted to %s", slack_message['channel'])
-    	    except HTTPError as e:
-    	        logger.error("Request failed: %d %s", e.code, e.reason)
-    	    except URLError as e:
-    	        logger.error("Server connection failed: %s", e.reason)
+   ```diff
+   import boto3
+   import json
+   import logging
+   import os
+   
+   from base64 import b64decode
+   from urllib.request import Request, urlopen
+   from urllib.error import URLError, HTTPError
+   
+   # The base-64 encoded, encrypted key (CiphertextBlob) stored in the kmsEncryptedHookUrl environment variable
+   - ENCRYPTED_HOOK_URL = os.environ['kmsEncryptedHookUrl']
+   # The Slack channel to send a message to stored in the slackChannel environment variable
+   SLACK_CHANNEL = os.environ['slackChannel']
+   
+   - HOOK_URL = "https://" + boto3.client('kms').decrypt(CiphertextBlob=b64decode(ENCRYPTED_HOOK_URL))['Plaintext'].decode('utf-8')
+   + HOOK_URL = os.environ['hookUrl']
+   
+   logger = logging.getLogger()
+   logger.setLevel(logging.INFO)
+   
+   def lambda_handler(event, context):
+       logger.info("Event: " + str(event))
+       message = json.loads(event['Records'][0]['Sns']['Message'])
+       logger.info("Message: " + str(message))
+   
+       alarm_name = message['AlarmName']
+       #old_state = message['OldStateValue']
+       new_state = message['NewStateValue']
+       reason = message['NewStateReason']
+   
+       slack_message = {
+           'channel': SLACK_CHANNEL,
+           'text': "%s state is now %s: %s" % (alarm_name, new_state, reason)
+       }
+   
+       req = Request(HOOK_URL, json.dumps(slack_message).encode('utf-8'))
+       try:
+           response = urlopen(req)
+           response.read()
+           logger.info("Message posted to %s", slack_message['channel'])
+       except HTTPError as e:
+           logger.error("Request failed: %d %s", e.code, e.reason)
+       except URLError as e:
+           logger.error("Server connection failed: %s", e.reason)
    ```
 
 2. `환경 변수` 탭에서 위 코드에 작성한 환경변수 값인 `hookUrl` 값과 `slackChannel` 값을 설정한다. 각각 Slack의 Webhook URL과 채널명을 입력하면 된다.
@@ -176,7 +174,7 @@ CloudWatch 실시간 모니터링을 하거나 경보를 설정해도 되지만,
 
    +) 사실 `hookUrl` 자체에 채널 정보가 포함되어있어서, `slackChannel` 변수자체를 코드에서 빼도 채널에 발송은 되는데, 이따가 마지막 단계에서 테스트해보면 `KeyError`가 나서... `lambda_function.py` 파일을 잘 찾아서 수정해주면 될것같긴한데, 그냥 뭐 크게 번거로운것도 아니니 채널명을 적어주기로했다.
 
-   ```
+   ```json
     {
       "errorMessage": "'channel'",
       "errorType": "KeyError",
@@ -234,7 +232,7 @@ CloudWatch 실시간 모니터링을 하거나 경보를 설정해도 되지만,
 
    코드 원문은 [AWS doc](https://aws.amazon.com/ko/blogs/mobile/invoking-aws-lambda-functions-via-amazon-sns/)에서 찾았다.
 
-   ```
+   ```json
     {
       "Records": [
         {
@@ -303,7 +301,7 @@ CloudWatch 실시간 모니터링을 하거나 경보를 설정해도 되지만,
 
    labmda 콘솔의 함수 코드 메뉴에서 `slack_message` 구문 작성을 수정한다. 나는 대충 이렇게 했다.
 
-   ```
+   ```python
     alarm_name = message['AlarmName']
     alarm_description = message['AlarmDescription']
     old_state = message['OldStateValue']
