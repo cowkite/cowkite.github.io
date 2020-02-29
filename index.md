@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Home
+description: 우물 안에서 서식하는 개발요정
+main: true
 ---
 
 <div class="intro-animation">

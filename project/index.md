@@ -2,10 +2,8 @@
 layout: default
 work: true
 main: true
-title: Selected Projects
+title: Projects
 description: 개발에 참여한 프로젝트
-project-header: true
-header-img: "img/project_bg.jpg"
 ---
 
 <div class="project">
