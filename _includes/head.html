@@ -16,12 +16,12 @@
     <meta name="twitter:card" content="summary_large_image"> 
     
     <!-- title -->
-    <meta property="og:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.main == true %}{{ page.title }} | {{ site:title }}{% else %}{{ page.title }}{% endif %}">
-    <meta name="twitter:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.main == true %}{{ page.title }} | {{ site:title }}{% else %}{{ page.title }}{% endif %}">
+    <meta property="og:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %}">
+    <meta name="twitter:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %}">
     
     <!-- description -->
-    <meta property="og:description" content="{% if page.main == true %}{{ page.description }}{% else %}{{ site:title }}{% endif %}"/>
-    <meta name="twitter:description" content="{% if page.main == true %}{{ page.description }}{% else %}{{ site:title }}{% endif %}">
+    <meta property="og:description" content="{{ site:title }}"/>
+    <meta name="twitter:description" content="{{ site:title }}">
     
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
