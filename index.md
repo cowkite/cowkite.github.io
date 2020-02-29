@@ -3,6 +3,7 @@ layout: default
 title: Home
 description: 우물 속에서 서식하는 개발요정
 main: true
+home: true
 ---
 
 <div class="intro-animation">
