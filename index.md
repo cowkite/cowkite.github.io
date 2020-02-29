@@ -16,7 +16,7 @@ main: true
                 <td><h1 class="intro">김소연</h1></td>
             </tr>
             <tr>
-                <td>자타공인 개발요정 <span class="label-emoji">🧚‍♀️</span></td>
+                <td>자타공인 개발요정 <span class="label-emoji">&#x1F9DA;&#x200D;&#x2640;&#xFE0F;</span></td>
             </tr>
         </table>
     </section>
