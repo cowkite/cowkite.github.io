@@ -7,7 +7,7 @@ blog: true
 text: true
 post-header: true
 header-img: "img/about.png"
-date: 2020-01-26
+date: 2020-01-15 18:46
 comments: true
 ---
 
