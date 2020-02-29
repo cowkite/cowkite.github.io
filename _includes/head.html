@@ -2,7 +2,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>{{ page.title }} | {{ site:title }}</title>
+  <title>{{ page.title }} | {{ site.title }}</title>
     
 <!-- Post info -->
 
@@ -16,8 +16,8 @@
     <meta name="twitter:card" content="summary_large_image"> 
     
     <!-- title -->
-    <meta property="og:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.home == true %}{{ page.description }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %}">
-    <meta name="twitter:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.home == true %}{{ page.description }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %}">
+    <meta property="og:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.home == true %}{{ site.url }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %}">
+    <meta name="twitter:title" content="{% if page.url == '/' %}{{ page.subtitle }}{% elsif page.home == true %}{{ site.url }}{% elsif page.main == true %}{{ page.title }} | {{ page.description }}{% else %}{{ page.title }}{% endif %}">
     
     <!-- description -->
     <meta property="og:description" content="{% if page.home == true %}{{ page.description }}{% else %}{{ site:title }}{% endif %}"/>
