@@ -277,7 +277,7 @@
     
     .catalogue-draft-message {
         text-align: center;
-        margin: 50px 0;
+        margin: 25px 0;
         width: 100%;
         padding: 32px 0;
         border: 1px solid $grey-2;
@@ -369,12 +369,11 @@ sup {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     padding: 4px 7px;
-    font-size: 13px;
-    font-weight: 800;
-    background-color: $yellow;
+    font-size: 12px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #E47B49 0%, #ea4c89 100%);
     border-radius: 8px;
-    color: #000;
-    margin-bottom: 10px;
+    color: #fff;
             
     @media (max-width: $break-medium) {
             margin: 10px 0;
