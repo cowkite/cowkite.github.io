@@ -6,6 +6,8 @@ type: Develop
 blog: true
 text: true
 draft: true
+header-img: "img/about.png"
+post-header: true
 date: 2020-03-08 01:57
 ---
 
