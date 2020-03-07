@@ -382,3 +382,8 @@ CloudWatch 실시간 모니터링을 하거나 경보를 설정해도 되지만,
    ![](img/26.png)
 
    <figcaption>AWS 요정 등장!</figcaption>
+
+### 오프 더 레코드
+ 요정을 보고 팀원들이 좋아했다. 🧚‍♀️
+
+![](img/27.jpeg)
