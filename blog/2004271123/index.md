@@ -1,26 +1,14 @@
-\---
-
+---
 layout: post
-
 title: Android와 iOS에서 ReactNative NativeBridge 구현하기
-
 subtitle: Kotlin과 Swift 환경에서의 ReactNative 브릿지 구성
-
 type: Develop
-
 blog: true
-
 text: true
-
-draft: true
-
 header-img: "img/about.png"
-
 post-header: true
-
 date: 2020-04-27 11:23
-
-\---
+---
 
 
 
