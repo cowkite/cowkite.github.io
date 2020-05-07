@@ -8,6 +8,7 @@ text: true
 header-img: "img/about.png"
 post-header: true
 date: 2020-04-27 11:23
+comments: true
 ---
 
 
