@@ -1,8 +1,52 @@
+- id: 202003inmybag
+  title: 인마이백
+  description: 소셜 네트워킹 및 커머스 결합 서비스
+  platform: Mobile application
+  period: 2020.03 - Present
+  thumbnail: img/project_inmybag_thumbnail.png
+  language: [
+    ReactNative,
+    TypeScript,
+    Android,
+    iOS,
+    Kotlin,
+    Swift
+  ]
+  skill: [
+    ReactHook,
+    Redux,
+    Firebase,
+    SQLite
+  ]
+  role: [
+    SNS 기능 및 커머스 기능 구현,
+    ReactNative 연동을 통한 멀티 플랫폼 지원
+  ]
+
+- id: 202005olivelounge
+  title: 올리브라운지
+  description: 올리브영 사내 교육/소통 플랫폼 서비스
+  platform: Mobile application
+  period: 2020.05 - Present
+  thumbnail: img/project_olivelounge_thumbnail.png
+  language: [
+    Android,
+    iOS,
+    Kotlin,
+    Swift
+  ]
+  skill: [
+    Retrofit2
+  ]
+  role: [
+    하이브리드 웹뷰 연동
+  ]
+
 - id: 201910scmdl
-  title: SCM최적발주 딥러닝 수요예측
+  title: 올리브영 SCM최적발주 딥러닝 수요예측
   description: 딥러닝을 통한 수요/재고예측
   platform: Machine Learning
-  period: 2019.10 - Present
+  period: 2019.10 - 2020.04
   thumbnail: img/project_scmdl_thumbnail.png
   language: [
     Python,
@@ -153,7 +197,7 @@
   ]
   skill: [
     JNI,
-    RxJAva,
+    RxJava,
     Realm,
     Lamb,
     ExoPlayer
