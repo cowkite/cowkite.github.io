@@ -1,64 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-      {% assign current = page.url | downcase | split: '/' %}
-      <nav class="nav">
-        <div class="nav-container">
-            <ul>
-                <li class="transition">
-                    <a href="{{ '' | prepend: site.baseurl }}/" {% if current[1] == "project" or current[1] == "blog" %} class="normal" {% endif %} class="active">Home</a>
-                </li>
-                <li class="transition">
-                    <a href="{{ '/project' | prepend: site.baseurl }}" {% if current[1] == "project" %} class="active"{% endif %} >Project</a>
-                </li>
-                <li class="transition">
-                    <a href="{{ '/blog' | prepend: site.baseurl }}" {% if current[1] == "blog" %} class="active"{% endif %} >Blog</a>
-                </li>
-            </ul>
-        </div>
-      </nav>
-    
-    {% if page.post-header == true %}
-        {% include post-header.html %}
+<body>
+  {% assign current = page.url | downcase | split: '/' %}
+  <nav class="nav">
+    <div class="nav-container">
+      <ul>
+        <li class="transition">
+          <a href="{{ '' | prepend: site.baseurl }}/" {% if current[1] == "project" or current[1] == "blog" %} class="normal" {% endif %} class="active">Home</a>
+        </li>
+        <li class="transition">
+          <a href="{{ '/project' | prepend: site.baseurl }}" {% if current[1] == "project" %} class="active"{% endif %} >Project</a>
+        </li>
+        <li class="transition">
+          <a href="{{ '/blog' | prepend: site.baseurl }}" {% if current[1] == "blog" %} class="active"{% endif %} >Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  {% if page.post-header == true %}
+  {% include post-header.html %}
+  {% endif %}
+  {% if page.project-header == true %}
+  {% include project-header.html %}
+  {% endif %}
+
+  <main>
+
+    {% include toc.html html=content class='toc' anchor_class='toc-anchor' h_max=4 %}
+
+    {{ content }}
+
+    {% if page.comments %}
+    <div class="comments">
+      <div id="disqus_thread"></div>
+      <script>
+        (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://https-cowkite-github-io.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
     {% endif %}
-    {% if page.project-header == true %}
-        {% include project-header.html %}
-    {% endif %}
-      
-    <main>
-      {{ content }}
 
-      {% if page.comments %}
-          <div class="comments">
-              <div id="disqus_thread"></div>
-              <script>
+  </main>
 
-              /**
-              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-              /*
-              var disqus_config = function () {
-              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-              };
-              */
-              (function() { // DON'T EDIT BELOW THIS LINE
-              var d = document, s = d.createElement('script');
-              s.src = 'https://https-cowkite-github-io.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-              })();
-              </script>
-              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-          </div>
-      {% endif %}
+  {% include footer.html %}
 
-    </main>
-      
-    {% include footer.html %}
-   
-  </body>
+</body>
 </html>
