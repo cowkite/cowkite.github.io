@@ -7,10 +7,10 @@
   language: [
     ReactNative,
     TypeScript,
-    Android,
     iOS,
-    Kotlin,
-    Swift
+    Swift,
+    Android,
+    Kotlin
   ]
   skill: [
     ReactHook,
@@ -30,12 +30,13 @@
   period: 2020.05 - Present
   thumbnail: img/project_olivelounge_thumbnail.png
   language: [
-    Android,
     iOS,
-    Kotlin,
-    Swift
+    Swift,
+    Android,
+    Kotlin
   ]
   skill: [
+    Alamofire,
     Retrofit2
   ]
   role: [
