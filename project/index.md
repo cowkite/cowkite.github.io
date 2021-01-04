@@ -8,7 +8,7 @@ description: 개발에 참여한 프로젝트
 
 <div class="project">
     {% for project in site.data.project-list %}
-        <div class="project-info transition">
+        <div class="project-info loading-animation">
             {% if project.thumbnail != nil %}
                 <img class="project-img" src="{{ project.thumbnail }}" />
             {% endif %}
