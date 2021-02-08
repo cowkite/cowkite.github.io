@@ -1,8 +1,31 @@
+- id: 202101oliveyoung
+  title: 올리브영
+  description: H&B E-commerce 서비스
+  platform: Mobile application
+  period: 2021.01 - Present
+  thumbnail: img/project_oliveyoung_thumbnail.png
+  language: [
+    iOS,
+    Swift,
+    Android,
+    Kotlin,
+    Java
+  ]
+  skill: [
+    TMS,
+    Netfunnel,
+    Firebase
+  ]
+  role: [
+    Native 전시개편 설계 및 개발 진행,
+    하이브리드 웹뷰 연동
+  ]
+
 - id: 202003inmybag
   title: 인마이백
   description: 소셜 네트워킹 및 커머스 결합 서비스
   platform: Mobile application
-  period: 2020.03 - Present
+  period: 2020.03 - 2020.12
   thumbnail: img/project_inmybag_thumbnail.png
   language: [
     ReactNative,
@@ -37,10 +60,12 @@
   ]
   skill: [
     Alamofire,
-    Retrofit2
+    Retrofit2,
+    Firebase
   ]
   role: [
-    하이브리드 웹뷰 연동
+    푸시 및 딥링크(유니버셜링크) 연동,
+    생체로그인 등 하이브리드 웹뷰 연동
   ]
 
 - id: 201910scmdl
