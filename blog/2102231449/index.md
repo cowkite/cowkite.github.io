@@ -7,7 +7,7 @@ blog: true
 text: true
 header-img: "img/about.png"
 post-header: true
-date: 2021-02-22 21:36
+date: 2021-02-23 14:49
 comments: true
 ---
 
@@ -34,7 +34,7 @@ if (condition) {
 
 1번 코드와 2번 코드는 룩은 달라도 동일한 로직을 수행하고 동일한 결과를 제공한다. `condition`이 `true`일 때는 `var` 변수에 `A`와 `B`가 추가되고, `false`일 때는 `var`변수에 `B`만 추가된다. 난 대게 [Return elary pattern](https://stackoverflow.com/questions/36707/should-a-function-have-only-one-return-statement), [Guard clauses refactoring](https://refactoring.guru/replace-nested-conditional-with-guard-clauses) 등의 패턴에 따라 1번 코드를 많이 봐왔고 또 1번 코드로 많이 짜왔지만, 사실 상 2번코드로 짠다고해서 큰 차이는 없다고 생각했기 때문에 코드리뷰 등의 과정에서 해당 패턴을 유심히 본 적은 없다.
 
-릿코드의 [824. Goat Latin](https://leetcode.com/problems/goat-latin/) 문제를 A개발자와 각각 풀면서 둘이 거의 유사한 로직을 구현했는데, 코드의 time complexity가 같음에도 불구하고 희한하게 두 코드에서 6ms 내외의 run time 차이가 있었다. 한줄 한줄 분석하며 원인을 찾다보니 한명은 1번 코드로 짰고 한명은 2번 코드로 짰는데 그 부분에서 run time이 차이난다는 것을 발견하게 되었다.]
+릿코드의 [824. Goat Latin](https://leetcode.com/problems/goat-latin/) 문제를 A개발자와 각각 풀면서 둘이 거의 유사한 로직을 구현했는데, 코드의 time complexity가 같음에도 불구하고 희한하게 두 코드에서 6ms 내외의 run time 차이가 있었다. 한줄 한줄 분석하며 원인을 찾다보니 한명은 1번 코드로 짰고 한명은 2번 코드로 짰는데 그 부분에서 run time이 차이난다는 것을 발견하게 되었다.
 
 # else 구문의 비용?
 
