@@ -9,13 +9,20 @@
 }
 
 main,
-footer>.footer_wrap,
+footer > .footer_wrap,
 .nav-container {
-  margin: 0 auto;
-  max-width: 750px;
-  width: 80%;
-    @media (max-width: $break-small) {
+    margin: 0 auto;
+    //display: flex;
+    width: 80%;
+
+    @media (min-width: $break-large) {
+        max-width: 1000px;
+    }
+    @media (max-width: $break-medium) {
         width: 88%;
+    }
+    @media (max-width: $break-small) {
+        width: 90%;
     }
 }
 
@@ -42,22 +49,23 @@ footer>.footer_wrap,
       font-family: $source;
       display: inline-block;
       margin: 0 40px 0 0;
-      
+      font-size: 16px;
+
       &:last-child {
           margin-right: 0;
       }
-      
+
       @media (max-width: $break-small) {
           margin: 0 24px 0 0;
           font-size: 16px;
       }
-      
+
   }
     li:hover {
           opacity: 0.5;
     }
 }
-    
+
 .active {
     padding-bottom: 6px;
     border-bottom: 2px solid $grey-0;
@@ -84,7 +92,7 @@ footer {
     color: $default-tint;
     border-top: 1px solid $grey-2;
     border-bottom: 1px solid $grey-2;
-    
+
     .footer_wrap {
         font-style: normal;
         position: relative;
@@ -93,19 +101,27 @@ footer {
             display: inline-block;
 
             .myname {
-                font-size: 20px;
+                font-size: 17px;
                 font-weight: 600;
                 margin-bottom: 4px;
-}
+
+                @media (max-width: $break-small) {
+                  font-size: 15px;
+                }
+            }
             .email {
                 font-size: 16px;
                 color: $default-tint;
+
+                @media (max-width: $break-small) {
+                    font-size: 14px;
+                }
             }
-            
+
             a.email:hover {
                 opacity: .6;
             }
-            
+
             .accounts {
                 margin-top: 36px;
                 a {
@@ -132,7 +148,7 @@ footer {
                 margin-top: 6px;
             }
             span {
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }

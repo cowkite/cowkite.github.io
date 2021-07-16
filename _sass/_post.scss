@@ -8,7 +8,7 @@
     width: 100%;
     min-height: 360px;
     background-color: $grey-2;
-    
+
     @media (max-width: $break-small) {
         min-height: 200px;
     }
@@ -22,17 +22,17 @@
     .header-project-title {
         font-weight: 700;
         font-size: 38px;
-        
+
         @media (max-width: $break-small) {
             font-size: 32px;
         }
     }
-    
+
     .header-project-des {
         padding-top: 6px;
         font-size: 20px;
         color: $grey-1;
-        
+
         @media (max-width: $break-small) {
             font-size: 17px;
         }
@@ -43,14 +43,14 @@
     background-color: $grey-2;
 }
 
-// post footer 
+// post footer
 .post-footer {
     margin: 70px 0px 0px 0px;
     border-top: 1px solid rgba(0,0,0,0.1);
     padding: 20px 0px;
 
     .image {
-        width: 15%;
+        width: 10%;
         display: inline-block;
         vertical-align: middle;
         padding: 10px;
@@ -58,7 +58,7 @@
             margin: 0px;
         }
         @media (max-width: $break-small) {
-            width: 30%;
+            width: 15%;
         }
     }
     .profile {
@@ -90,7 +90,7 @@
         display: inline-block;
         vertical-align: middle;
         padding: 0px 10px;
-        font-size: 0.8em;
+        font-size: 0.9em;
         p {
             margin: 0px;
             line-height: 1.5;
@@ -115,7 +115,7 @@
         font-family: $san-serif;
         font-weight: 400;
         letter-spacing: -0.009em;
-      
+
     sup {
         a.footnote {
             background: none;
@@ -125,9 +125,9 @@
     img {
         margin: 0 auto;
     }
-           
+
   }
-    
+
     a {
         transition: all 0.2s ease-in-out;
         background-position: 0% 100%, 110% 90%, 0% 98%;
@@ -135,15 +135,15 @@
         background-size: 2px 1px, 2px 1px, 1px 1px;
         background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient($primary, $primary);
     }
-    
+
     a:hover {
         color: $primary;
         text-decoration-color: $primary;
     }
-    
+
         a.book-link {
             background-image: none;
-            
+
             .book-cover {
                 width: 30%;
                 display: inline-block;
@@ -151,11 +151,11 @@
                 margin: 24px 11px;
                 border-radius: 5px;
                 box-shadow: 0px 8px 24px -7px rgba(0,0,0,0.03);
-                
+
                 @media (max-width: 914px) {
                     margin: 22px 8px;
                 }
-                
+
                 @media (max-width: $break-small ) {
                     width: 30%;
                     margin: 18px 4px;
@@ -167,45 +167,57 @@
             }
         }
             a.book-link:after {
-                    background: linear-gradient(to right,rgba(0,0,0,.2) 0,rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,rgba(0,0,0,.2) 100%);  
+                    background: linear-gradient(to right,rgba(0,0,0,.2) 0,rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,rgba(0,0,0,.2) 100%);
             }
-    
-    
-    h1 { 
+
+
+    h1 {
         padding: 40px 0 16px 0;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 23px;
         letter-spacing: -0.009em;
+
+        @media (max-width: $break-small) {
+            font-size: 21px;
+        }
     }
-    
+
     h1:first-child {
         padding: 0 0 16px 0;
     }
-    
+
     h2 {
         padding: 30px 0 12px 0;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 21px;
+
+        @media (max-width: $break-small) {
+            font-size: 19px;
+        }
     }
-    
+
     h2:first-child {
         padding: 0 0 12px 0;
     }
-    
+
     h3 {
         padding: 20px 0 10px 0;
-        font-size: 22px;
+        font-size: 19px;
         font-weight: 600;
+
+        @media (max-width: $break-small) {
+            font-size: 17px;
+        }
     }
-    
+
     h4, h5 {
         padding: 12px 0 8px 0;
     }
-    
+
     h5 {
         font-size: 17px;
     }
-    
+
     h6 {
         line-height: 1.6;
         font-size: 17px;
@@ -216,33 +228,33 @@
         @media (max-width: $break-small) {
             font-size: 15px;
         }
-        
+
     }
-    
+
     figcaption {
         text-align: center;
-        font-size: 17px;
+        font-size: 14px;
         color: $grey-1;
         line-height: 1.8;
         margin-bottom: 40px;
-        
+
         @media (max-width: $break-small ) {
-            font-size: 15px;
+            font-size: 13px;
         }
     }
-    
+
     ol {
         margin: 0;
         padding-left: 10px;
     }
-    
+
     ol {
         li {
             padding: 6px 0;
             margin-left: 8px;
         }
     }
-    
+
     ul {
         li {
             list-style: none;
@@ -251,7 +263,7 @@
             line-height: 1.65;
             position: relative;
         }
-        
+
         li:before {
             content: "";
             position: absolute;
@@ -261,12 +273,12 @@
             border-radius: 50%;
             left: -22px;
             top: 16px;
-            
+
             @media (max-width: $break-small) {
                 top: 14px;
             }
         }
-        
+
         ul {
             li {
                 list-style: none;
@@ -274,7 +286,7 @@
             }
         }
     }
-    
+
     .catalogue-draft-message {
         text-align: center;
         margin: 10px 0 50px 0;
@@ -284,22 +296,22 @@
         font-size: 16px;
         color: $grey-0;
         font-weight: 500;
-        
+
         @media (max-width: $break-small ) {
             font-size: 15px;
         }
-        
+
         h1 {
             font-family: $source;
             letter-spacing: 0.01em;
             color: $primary;
             padding-bottom: 7px;
             font-size: 25px;
-            
+
             @media (max-width: $break-small ) {
                 font-size: 23px;
             }
-            
+
         }
     }
 }
@@ -325,29 +337,30 @@ sup {
 .post-info>h1.post-title {
     padding: 0 0 12px 0;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
     font-family: $san-serif;
-    line-height: 1.2;
+    line-height: 1.2em;
     letter-spacing: -0.009em;
-    
+
     @media (max-width: $break-small) {
-        font-size: 28px;
-        line-height: 1.4em;
+        font-size: 24px;
+        line-height: 1.2em;
+        padding: 0 0 6px 0;
     }
 }
-    
+
 .post-info>h2.post-subtitle {
     padding: 0 0 10px 0;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.5;
 
     @media (max-width: $break-small) {
-        font-size: 20px;
+        font-size: 17px;
         padding: 0 0 15px 0;
-    }        
+    }
 }
-    
+
 .post-info>h2.post-date {
     padding: 0 0 60px 0;
     font-weight: 400;
@@ -358,7 +371,7 @@ sup {
     @media (max-width: $break-small) {
         font-size: 16px;
         padding: 0 0 80px 0;
-    }        
+    }
 }
 
 .catalogue-tag {
@@ -373,11 +386,11 @@ sup {
     background: linear-gradient(45deg, #E47B49 0%, #ea4c89 100%);
     border-radius: 8px;
     color: #fff;
-            
+
     @media (max-width: $break-medium) {
             margin: 10px 0;
     }
-            
+
 }
 
 .post>div.footnotes {
@@ -415,11 +428,11 @@ sup {
     border: 1px solid #D8E0E7;
     border-radius: 6px;
     padding: 0 24px 20px 24px;
-    
+
     p {
         margin: 0;
     }
-    
+
     .info-title {
         margin-top: 16px;
         display: inline-block;
@@ -434,7 +447,7 @@ sup {
         color: $grey-0-80;
         font-size: 17px;
     }
-    
+
     .info-small {
         font-size: 16px;
         letter-spacing: .4px;

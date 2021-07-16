@@ -1,5 +1,5 @@
 .project {
-   
+
     &-info {
         border-bottom: 1px solid rgb(230,230,230);
         margin: 15px 0px;
@@ -18,42 +18,46 @@
 
         .project-platform {
             color: $primary;
-            font-size: 18px;
+            font-size: 17px;
             font-family: $source;
             font-weight: 600;
             margin-bottom: 10px;
+
+            @media (max-width: $break-small) {
+                font-size: 15px;
+            }
         }
-        
-        
+
+
         h1.project-title {
             color: $grey-0;
             display: block;
             font-family: $san-serif;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 700;
             line-height: 1.5;
             letter-spacing: -0.009em;
             position: relative;
 
             @media (max-width: $break-small) {
-                  font-size: 22px;
+                  font-size: 20px;
             }
         }
-        
+
         @media (max-width: $break-medium) {
             display: block;
             width: 100%;
         }
 
         .project-description {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.75;
 
             @media (max-width: $break-small) {
-                font-size: 16px;
-            }        
+                font-size: 15px;
+            }
         }
-        
+
         .project-date {
             font-size: 16px;
             color: $grey-1;
@@ -61,12 +65,16 @@
 
             @media (max-width: $break-small) {
                 font-size: 14px;
-            }        
+            }
         }
 
         .project-role {
-            font-size: 16px;
+            font-size: 15px;
             margin: 20px 0px;
+
+            @media (max-width: $break-small) {
+                font-size: 14px;
+            }
         }
         .project-role li {
             margin-top: 8px;
@@ -82,12 +90,16 @@
 
         .radius div {
             margin-right: 4px;
-            font-size: 13px;
+            font-size: 12px;
             border-radius: 20px;
             padding: 2px 15px;
             white-space: nowrap;
             display: inline-block;
             margin-bottom: 5px;
+
+            @media (max-width: $break-small) {
+                font-size: 11px;
+            }
         }
 
         .project-language div {
@@ -99,7 +111,7 @@
             border: 1px solid rgb(244, 65, 95);
             color: rgb(244, 65, 95);
         }
-        
+
     }
-    
+
 }

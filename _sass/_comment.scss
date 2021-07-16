@@ -1,0 +1,10 @@
+
+#disqus_thread a {
+  color: $primary;
+  font-weight: bold;           /* no effect */
+  text-decoration: underline;  /* no effect */
+  font-size: 15px !important;;
+}
+#disqus_thread p {
+  color: green;
+}

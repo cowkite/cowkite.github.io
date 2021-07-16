@@ -12,10 +12,10 @@ body {
 
 html {
   font-family: $san-serif, $source;
-  font-size: 17px;
+  font-size: 14px;
 
   @media (min-width: $break-small) {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
